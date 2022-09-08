@@ -1,0 +1,67 @@
+:root {
+  /* // default theme color
+  // can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #5d8392;
+}
+
+.slidev-layout {
+
+  ul {
+    list-style: disc;
+  }
+
+  li {
+    @apply mt-3
+  }
+
+  li > ul > li {
+    @apply mt-0
+  }
+
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro,
+.slidev-layout.end {
+  @apply h-full grid;
+
+  h1+p {
+    @apply -mt-2 opacity-90 mb-4;
+  }
+
+  p+h2,
+  ul+h2,
+  table+h2 {
+    @apply mt-10;
+  }
+
+}
+
+.slidev-layout.intro {
+  padding-left: calc(3.5rem - 5px);
+}
+
+.slidev-layout.section {
+  @apply bg-repeat;
+  background-image: url(bg-green.png);
+
+  h1 {
+    @apply text-6xl font-500 leading-20;
+  }
+}
+
+.slidev-layout.plan {
+  h1 {
+    @apply text-6xl font-500 leading-20;
+  }
+}
+
+/* #f05642
+#25b39e
+#3a3a3a
+#efefef
+
+#1e73be */
+
+/* pattern
+https://patternico.com/#LYxpcYy3Bn63ofcX */
